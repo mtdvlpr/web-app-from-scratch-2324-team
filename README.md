@@ -1,5 +1,11 @@
-# TEAM app - Web App From Scratch @cmda-minor-web 2023 - 2024
+# WAFS-team-rocket
 
-In de team app verzamel je de informatie van je teamleden en toon je ze op een toffe manier.
-De gegevens per teamlid haal je dynamisch op door middel van een samen vastgesteld dataformaat (json, microdata).
-Je zorgt ervoor dat in ./docs/team.json de juiste urls naar de persoonlijke pagina's staat. Die heb je nodig voor de basis van de team app, maar die gebruiken we ook voor een verzamelsite van alle team apps.
+## Description
+
+This is an assignment for Web App From Scratch. The assignment is to create a group application that fetches data from our individual applications. We all provided our data in a `me.json` file at the root of our applications. The project is built with vanilla HTML, CSS and JavaScript.
+
+[View live demo](https://mtdvlpr.github.io/WAFS-team-rocket/)
+
+## Contribute
+
+If you want to contribute, please get familiar with our [CONTRIBUTING.md](./CONTRIBUTING.md).

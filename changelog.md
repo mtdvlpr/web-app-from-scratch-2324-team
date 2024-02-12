@@ -1,5 +1,5 @@
 # Changelog
-## Week 1
-### 05/02/2024
-- Tabel met teams en beschrijving toegevoegd
-- Overzicht pagina basic styling gegeven
+
+## 12-02-2024
+
+- Eerste opzet voor de applicatie (hello world)
