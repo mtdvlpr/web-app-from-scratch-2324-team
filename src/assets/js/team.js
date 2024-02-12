@@ -3,13 +3,13 @@
 /**
  * Loads the team info into the app
  * @param {{
- * name: string
+ * teamName: string
  * members: {name: string; personalPage: string}[]
  * }} info
  */
 export const setTeamInfo = (info) => {
   const title = document.getElementById("title");
-  title.textContent = info.name;
+  title.textContent = info.teamName;
 
   const list = document.createElement("ul");
   info.members.forEach((member) => {

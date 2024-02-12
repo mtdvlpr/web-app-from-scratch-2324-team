@@ -3,7 +3,7 @@
 /**
  * Fetches local team data from ./team.json
  * @returns {Promise<{
- * title: string
+ * teamName: string
  * members: {name: string; personalPage: string}[]
  * }>} The fetched data
  */
