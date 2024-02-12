@@ -21,7 +21,7 @@ export async function fetchTeamData() {
  */
 export const fetchPersonData = async (personalPage) => {
   try {
-    const response = await fetch(`${personalPage}/me.json`);
+    const response = await fetch(`${personalPage}/info.json`);
     return response.json();
   } catch (e) {
     console.error(e);
