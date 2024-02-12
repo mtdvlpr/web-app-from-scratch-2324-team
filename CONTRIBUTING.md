@@ -4,13 +4,13 @@ We work in the following manner:
 
 ## Git Workflow
 
-Every feature should be developed in a seperate branch. Once the feature is ready for review, a merge request is made, so that any other team members can give feedback on the code. When one or more team members approved the changes, the merge request can be merged and will be automatically deployed.
+Every feature should be developed in a separate branch. Once the feature is ready for review, a merge request is made, so that any other team members can give feedback on the code. When one or more team members approved the changes, the merge request can be merged and will be automatically deployed.
 
 ## Features
 
 ### HTML
 
-Every feature should have its own CSS and JavaScript files. The base structure of the feature should be defined in [`./src/index.html`](./src/index.html). 
+Every feature should have its own CSS and JavaScript files. The base structure of the feature should be defined in [`./src/index.html`](./src/index.html).
 
 ### CSS
 
