@@ -2,7 +2,7 @@
  * Loads the team info into the app
  * @param {{
  * name: string
- * members: {name: string; github: string}[]
+ * members: {name: string; personalPage: string}[]
  * }} info
  */
 export const setTeamInfo = (info) => {

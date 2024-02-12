@@ -1,9 +1,21 @@
 {
-  "name": "Team Rocket",
+  "teamName": "Team Rocket",
   "members": [
-    { "name": "Manoah", "github": "mtdvlpr" },
-    { "name": "Eva", "github": "evaboogaard" },
-    { "name": "Nesli", "github": "neslihva" },
-    { "name": "Yeliz", "github": "yelunl" }
+    {
+      "name": "Eva",
+      "personalPage": "https://evaboogaard.github.io/web-app-from-scratch-2324/"
+    },
+    {
+      "name": "Manoah",
+      "personalPage": "https://mtdvlpr.github.io/web-app-from-scratch-2324/"
+    },
+    {
+      "name": "Nesli",
+      "personalPage": "https://neslihva.github.io/web-app-from-scratch-2324/"
+    },
+    {
+      "name": "Yeliz",
+      "personalPage": "https://yelunl.github.io/web-app-from-scratch-2324/"
+    }
   ]
 }

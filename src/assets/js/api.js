@@ -2,7 +2,7 @@
  * Fetches local team data from ./team.json
  * @returns {Promise<{
  * title: string
- * members: {name: string; github: string}[]
+ * members: {name: string; personalPage: string}[]
  * }>} The fetched data
  */
 export async function fetchTeamData() {
@@ -16,14 +16,12 @@ export async function fetchTeamData() {
 
 /**
  * Fetches personal data from a team member
- * @param {string} github The GitHub username of the team member
+ * @param {string} personalPage The URL of the personal page of the member
  * @returns {Promise<*>} The fetched data
  */
-export const fetchPersonData = async (github) => {
+export const fetchPersonData = async (personalPage) => {
   try {
-    const response = await fetch(
-      `https://${github}.github.io/web-app-from-scratch-2324/me.json`
-    );
+    const response = await fetch(`${personalPage}/me.json`);
     return response.json();
   } catch (e) {
     console.error(e);
