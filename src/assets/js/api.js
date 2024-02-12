@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Fetches local team data from ./team.json
  * @returns {Promise<{

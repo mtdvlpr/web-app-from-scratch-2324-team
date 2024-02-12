@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Loads the team info into the app
  * @param {{

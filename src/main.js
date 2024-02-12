@@ -1,3 +1,5 @@
+"use strict";
+
 // Main entry point of the app
 import { fetchTeamData } from "api";
 import { setTeamInfo } from "team";
