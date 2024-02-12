@@ -16,7 +16,7 @@
   "cSpell.language": "en,nl",
   "typescript.tsdk": "node_modules/typescript/lib",
   "liveServer.settings.root": "/src",
-  "liveServer.settings.mount": [["/WAFS-team-rocket/", "./src"]],
+  "liveServer.settings.mount": [["/web-app-from-scratch-2324-team/", "./src"]],
   "cSpell.words": [
     "Avenir",
     "mtdvlpr",

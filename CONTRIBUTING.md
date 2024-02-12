@@ -29,7 +29,7 @@ JavaScript logic should go in a `./src/assets/js/feature.js` file and be importe
   {
     "imports": {
       // other imports are also defined here
-      "feature": "/WAFS-team-rocket/assets/js/feature.js"
+      "feature": "/web-app-from-scratch-2324-team/assets/js/feature.js"
     }
   }
 </script>
