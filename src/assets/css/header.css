@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    background: black;
+    width: 5rem;
+    height: 0.2rem;
+    flex-grow: 1;
+}
+
+header img {
+    width: 20rem;
+}
