@@ -1,1 +1,141 @@
-/* Team styles */
+/* TEAM STYLES */
+
+#startPagina.hidden {
+    display: none;
+}
+
+#links,
+#about,
+#skills {
+    display: none;
+}
+
+#links.shown,
+#about.shown,
+#skills.shown {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    #links.shown,
+    #about.shown,
+    #skills.shown {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+#links.shown > div:first-of-type,
+#about.shown > div:first-of-type,
+#skills.shown > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 800px) {
+    #links.shown > div:first-of-type,
+    #about.shown > div:first-of-type,
+    #skills.shown > div:first-of-type {
+        align-self: flex-start;
+        width: 60%;
+    }
+}
+
+@media (min-width: 1400px) {
+    #links.shown > div:first-of-type {
+        width: 40%;
+    }
+}
+
+@media (min-width: 800px) {
+    #links.shown > div:last-of-type,
+    #about.shown > div:last-of-type,
+    #skills.shown > div:last-of-type {
+        width: 35%;
+        margin-right: 5%;
+    }
+}
+
+@media (min-width: 1400px) {
+    #links.shown > div:last-of-type {
+        width: 55%;
+    }
+}
+
+/* SKILLS */
+
+#skills label {
+    font-weight: 600;
+}
+
+#skills meter {
+    width: 100%;
+    height: 2rem;
+}
+
+#skills meter::-webkit-meter-optimum-value {
+    background: var(--secondary-color);
+}
+
+#skills .skill-bars {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LINKS */
+
+#links .socialmedia {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#links .socialmedia li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#links .socialmedia li a:hover img {
+    opacity: 0.6;
+    scale: 1.1;
+}
+
+#links .socialmedia li a img {
+    width: 3rem;
+    transition: var(--transition-base);
+}
+
+/* POKEBALL NAVIGATION */
+
+.member-nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.member-nav ul li a {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.member-nav ul li a:hover img {
+    transform: translateY(-0.2rem);
+    filter: drop-shadow(0 0.5rem 0rem var(--secondary-color));
+}
+
+.member-nav img {
+    width: 4rem;
+    transition: var(--transition-base);
+}
+
+/* AVATAR */
+.avatar {
+    width: 100%;
+    align-self: center;
+}

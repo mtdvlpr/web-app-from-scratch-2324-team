@@ -1,134 +1,270 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- Meta tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Links -->
+        <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
 
-  <!-- Links -->
-  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+        <!-- Scripts -->
+        <script type="importmap">
+            {
+                "imports": {
+                    "api": "/web-app-from-scratch-2324-team/assets/js/api.js",
+                    "team": "/web-app-from-scratch-2324-team/assets/js/team.js"
+                }
+            }
+        </script>
+        <script type="module" src="main.js"></script>
 
-  <!-- Scripts -->
-  <script type="importmap">
-      {
-        "imports": {
-          "api": "/web-app-from-scratch-2324-team/assets/js/api.js",
-          "team": "/web-app-from-scratch-2324-team/assets/js/team.js"
-        }
-      }
-    </script>
-  <script type="module" src="main.js"></script>
+        <!-- Title and base URL -->
+        <title>Team Rocket - WAFS</title>
+        <base href="/web-app-from-scratch-2324-team/" />
+    </head>
 
-  <!-- Title and base URL -->
-  <title>Team Rocket - WAFS</title>
-  <base href="/web-app-from-scratch-2324-team/" />
-</head>
+    <body>
+        <div id="app">
+            <!-- Header -->
+            <header>
+                <div></div>
+                <h1 id="title">
+                    <img src="./assets/img/pokemon.svg" alt="" />
+                </h1>
+                <div></div>
+            </header>
 
-<body>
-  <div id="app">
-    <!-- Header -->
-    <header>
-      <div></div>
-      <h1 id="title"><img src="src/assets/img/pokemon.svg" alt=""></h1>
-      <div></div>
-    </header>
+            <!-- Main content -->
+            <main>
+                <!-- Main navigation -->
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="./assets/img/pokeball_closed.png"
+                                    alt="pokeball"
+                                />
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#"
+                                ><img
+                                    src="./assets/img/pokeball_closed.png"
+                                    alt="pokeball"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="./assets/img/pokeball_closed.png"
+                                    alt="pokeball"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="./assets/img/pokeball_closed.png"
+                                    alt="pokeball"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <a href="#">previous</a>
+                    <a href="#">next</a> -->
+                </nav>
+                <!-- Team article -->
+                <article id="startPagina">
+                    <h2>Team Rocket</h2>
+                    <p>Welkom op onze website! Hier kan je....</p>
+                    <img
+                        src="./assets/img/Team_rocket4.webp"
+                        alt="Team Rocket"
+                    />
+                </article>
 
-    <!-- Main content -->
-    <main>
-      <!-- Main navigation -->
-      <nav>
-        <ul>
-          <li>
-            <a href="#"><img
-                src="src/assets/img/pokeball.png"
-                alt="pokeball"> </a>
-          </li>
-          <li>
-            <a href="#"><img
-                src="src/assets/img/pokeball.png"
-                alt="pokeball"> </a>
-          </li>
-          <li>
-            <a href="#"><img
-                src="src/assets/img/pokeball.png"
-                alt="pokeball"> </a>
-          </li>
-          <li>
-            <a href="#"><img
-                src="src/assets/img/pokeball.png"
-                alt="pokeball"> </a>
-          </li>
-        </ul>
-        <a href="#">previous</a>
-        <a href="#">next</a>
-      </nav>
-      <!-- Team article -->
-      <article id="startPagina">
-        <h2>Team Rocket</h2>
-        <p>Welkom op onze website! Hier kan je....</p>
-      </article>
+                <article id="about">
+                    <div>
+                        <h2>loading...</h2>
+                        <nav class="member-nav">
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        >About
+                                        <img
+                                            src="./assets/img/pokeball_open.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >Skills
+                                        <img
+                                            src="./assets/img/pokeball_closed.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >Links<img
+                                            src="./assets/img/pokeball_closed.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Nulla asperiores, aut laborum, fugiat,
+                            perferendis rem nihil facere mollitia suscipit quos
+                            quae iusto! In, asperiores ab reprehenderit quisquam
+                            enim ipsam debitis maiores, perferendis expedita,
+                            iure soluta eos dolorum harum obcaecati repellendus.
+                        </p>
+                    </div>
+                    <div>
+                        <img
+                            src="./assets/img/avatar_placeholder.png"
+                            alt="avatar"
+                            class="avatar"
+                        />
+                    </div>
+                </article>
 
-      <article id="about">
-        <h2>loading...</h2>
-        <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Links</a></li>
-          </ul>
-        </nav>
-        <img src="" alt="avatar">
-        <p>about this member</p>
-      </article>
+                <article id="skills">
+                    <div>
+                        <h2>loading...</h2>
+                        <nav class="member-nav">
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        >About
+                                        <img
+                                            src="./assets/img/pokeball_closed.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >Skills
+                                        <img
+                                            src="./assets/img/pokeball_open.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >Links
+                                        <img
+                                            src="./assets/img/pokeball_closed.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="skill-bars">
+                            <label for="html">HTML</label>
+                            <meter id="html" value="5" min="0" max="10"></meter>
+                            <label for="css">CSS</label>
+                            <meter id="css" value="5" min="0" max="10"></meter>
+                            <label for="js">JS</label>
+                            <meter id="js" value="5" min="0" max="10"></meter>
+                            <label for="design">DESIGN</label>
+                            <meter
+                                id="design"
+                                value="5"
+                                min="0"
+                                max="10"
+                            ></meter>
+                        </div>
+                        <p>skills of this member</p>
+                    </div>
+                    <div>
+                        <img
+                            src="./assets/img/avatar_placeholder.png"
+                            alt="avatar"
+                            class="avatar"
+                        />
+                    </div>
+                </article>
 
-      <article id="skills">
-        <h2>loading...</h2>
-        <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Links</a></li>
-          </ul>
-        </nav>
-        <label for="html">HTML</label>
-        <meter id="html" value="5" min="0" max="10"></meter>
-        <label for="css">CSS</label>
-        <meter id="css" value="5" min="0" max="10"></meter>
-        <label for="js">JS</label>
-        <meter id="js" value="5" min="0" max="10"></meter>
-        <label for="design">DESIGN</label>
-        <meter id="design" value="5" min="0" max="10"></meter>
-
-        <p>skills of this member</p>
-      </article>
-
-      <article id="links">
-        <h2>loading...</h2>
-        <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Links</a></li>
-          </ul>
-        </nav>
-        <ul>
-          <li><a href="#"><img src="" alt="github"><p>Github</p></a></li>
-          <li><a href="#"><img src="" alt="instagram"><p>Instagram</p></a></li>
-          <li><a href="#"><img src="" alt="linkedin"><p>Linkedin</p></a></li>
-        </ul>
-      </article>
-
-
-
-      <img src="src/assets/img/Team_rocket4.webp" alt="Team Rocket">
-    </main>
-    <footer>
-      <div></div>
-    </footer>
-  </div>
-
-</body>
-
+                <article id="links">
+                    <div>
+                        <h2>loading...</h2>
+                        <nav class="member-nav">
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        >About
+                                        <img
+                                            src="./assets/img/pokeball_closed.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >Skills
+                                        <img
+                                            src="./assets/img/pokeball_closed.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >Links
+                                        <img
+                                            src="./assets/img/pokeball_open.png"
+                                            alt=""
+                                    /></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="socialmedia">
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./assets/img/gh.svg"
+                                        alt="github"
+                                    />
+                                    <p>Github</p></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./assets/img/ig.svg"
+                                        alt="instagram"
+                                    />
+                                    <p>Instagram</p></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./assets/img/in.svg"
+                                        alt="linkedin"
+                                    />
+                                    <p>Linkedin</p></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img
+                            src="./assets/img/avatar_placeholder.png"
+                            alt="avatar"
+                            class="avatar"
+                        />
+                    </div>
+                </article>
+            </main>
+            <footer>
+                <div></div>
+            </footer>
+        </div>
+    </body>
 </html>

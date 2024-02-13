@@ -1,14 +1,38 @@
-main > nav li {
-    margin-bottom: 2rem;
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
-main > nav li a {
+@media (min-width: 1400px) {
+    .main-nav ul {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+    }
+}
+
+.main-nav li.active a {
+    background-color: var(--secondary-color);
+    transform: scale(1.15);
+}
+
+.main-nav li a {
     display: inline-block;
     background-color: white;
     padding: 2rem 3rem;
 }
 
-main > nav img {
+@media (min-width: 800px) {
+    .main-nav li a {
+        padding: 2rem 2rem;
+    }
+}
+
+.main-nav img {
     width: 4rem;
     opacity: 0.2;
     animation: rotate 1s infinite;
