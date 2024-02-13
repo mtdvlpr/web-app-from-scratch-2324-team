@@ -2,6 +2,8 @@
 
 /* Import feature styles */
 @import url("./team.css");
+@import url("./header.css");
+@import url("./teamNavigation.css");
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -24,6 +26,7 @@ body {
   box-sizing: border-box;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #FBD743;
 }
 
 #app {
@@ -39,4 +42,23 @@ body {
     color: #213547;
     background-color: #ffffff;
   }
+}
+
+
+ul {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+main>*:nth-child(1) {
+  order: 3;
+}
+
+main> img {
+  max-width: 25rem;
+  align-self: center;
 }
