@@ -1,1 +1,9 @@
 /* Team styles */
+
+#team {
+  display: none;
+}
+
+#team.active {
+  display: block;
+}

@@ -29,3 +29,19 @@ export const fetchPersonData = async (personalPage) => {
     console.error(e);
   }
 };
+
+export const fetchTeamMembers = async (team) => {
+  const promises = [];
+  team.members.forEach((member) => {
+    promises.push(fetchPersonData(member.personalPage));
+  });
+
+  const members = [];
+  const result = await Promise.allSettled(promises);
+  result.forEach((memberResult) => {
+    if (memberResult.status === "fulfilled") {
+      members.push(memberResult.value);
+    }
+  });
+  return members;
+};
