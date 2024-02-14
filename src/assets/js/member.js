@@ -40,7 +40,7 @@ const setHabitats = (habitats = []) => {
       habitatLink.textContent = habitat.title;
       habitatItem.appendChild(habitatLink);
     } else {
-      habitatItem.textContent = habitat.title;
+      habitatItem.textContent = `${habitat.title}: ${habitat.value}`;
     }
     list.appendChild(habitatItem);
   });
