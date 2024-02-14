@@ -1,19 +1,21 @@
 #about img {
   width: 50vw;
-  border: 0.1rem dashed black;
   aspect-ratio: 1;
   object-fit: cover;
   margin: 2rem 0 2rem 0;
+  border: 0.1rem solid var(--tertiary-color);
+  box-shadow:
+    -0.5rem 0.5rem 0 var(--tertiary-color),
+    0.5rem -0.5rem var(--secondary-color);
 }
 @media (min-width: 800px) {
   #about img {
     width: 25vw;
-    border: 0.1rem dashed black;
   }
 }
 
 #about p {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.681);
   padding: 1rem;
   border: 0.1rem solid black;
 }
