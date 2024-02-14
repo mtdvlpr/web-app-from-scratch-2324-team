@@ -1,22 +1,22 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header div {
-    background: black;
-    width: 10vw;
-    height: 0.2rem;
-    flex-grow: 1;
+  background: black;
+  width: 10vw;
+  height: 0.2rem;
+  flex-grow: 1;
 }
 
 header img {
-    width: 50vw;
+  width: 50vw;
 }
 
 @media (min-width: 800px) {
-    header img {
-        width: 20vw;
-    }
+  header img {
+    width: 20vw;
+  }
 }

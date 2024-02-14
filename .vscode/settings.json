@@ -17,6 +17,7 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "liveServer.settings.root": "/src",
   "liveServer.settings.mount": [["/web-app-from-scratch-2324-team/", "./src"]],
+  "cSpell.ignoreWords": ["transform"],
   "cSpell.words": [
     "Avenir",
     "mtdvlpr",
