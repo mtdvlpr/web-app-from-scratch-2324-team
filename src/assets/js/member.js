@@ -49,7 +49,17 @@ const setHabitats = (habitats = []) => {
 
 /**
  * Fills the page with the active member's data
- * @param {*} member
+ * @param {{
+ * firstName: string
+ * lastName: string
+ * avatar_url: string
+ * age: number
+ * bio: string
+ * stats: {title: string; value: number}[]
+ * strengths: string[]
+ * weaknesses: string[]
+ * habitat: {title: string; value: number}[]
+ * } | undefined} member The member to display
  */
 export const setActiveMember = (member) => {
   setActivePage(member?.firstName);

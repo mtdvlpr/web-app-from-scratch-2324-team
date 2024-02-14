@@ -3,10 +3,16 @@
 // Main entry point of the app
 import { fetchTeamData, fetchTeamMembers } from "api";
 import { setActiveMember } from "member";
-import { initTabs, initNavigation, setActiveTab } from "navigation";
+import {
+  initTabs,
+  initNavigation,
+  setActiveTab,
+  setNavigationLoading,
+} from "navigation";
 
 // Loads data in the app
 async function loadData() {
+  setNavigationLoading();
   const team = await fetchTeamData();
   const members = await fetchTeamMembers(team);
   initNavigation(members);
@@ -15,12 +21,11 @@ async function loadData() {
   const member = members.find((member) =>
     url.hash.startsWith(`#/${member.firstName}`)
   );
-  console.log("member", member);
-  console.log("hash", url.hash);
-  console.log("tab", url.hash.split("/").pop());
   if (member) {
     setActiveMember(member);
-    setActiveTab(url.hash.split("/").pop());
+    setActiveTab(
+      url.hash.split("/").pop()?.replace(member.firstName, "") || "about"
+    );
   } else {
     url.hash = "";
     window.history.pushState(null, "", url.toString());
