@@ -40,7 +40,7 @@ const setHabitats = (habitats = []) => {
       habitatLink.textContent = habitat.title;
       habitatItem.appendChild(habitatLink);
     } else {
-      habitatItem.textContent = habitat.title;
+      habitatItem.textContent = `${habitat.title}: ${habitat.value}`;
     }
     list.appendChild(habitatItem);
   });
@@ -49,9 +49,24 @@ const setHabitats = (habitats = []) => {
 
 /**
  * Fills the page with the active member's data
- * @param {*} member
+ * @param {{
+ * firstName: string
+ * lastName: string
+ * avatar_url: string
+ * age: number
+ * bio: string
+ * stats: {title: string; value: number}[]
+ * strengths: string[]
+ * weaknesses: string[]
+ * habitat: {title: string; value: number}[]
+ * favoritePokemon: string
+ * favoritePokemonAvatar: string
+ * favoritePokemonColor: string
+ * } | undefined} member The member to display
  */
 export const setActiveMember = (member) => {
+  document.body.style.backgroundColor =
+    member?.favoritePokemonColor ?? "#fbd743";
   setActivePage(member?.firstName);
 
   // Set member avatar

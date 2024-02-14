@@ -19,7 +19,20 @@ export async function fetchTeamData() {
 /**
  * Fetches personal data from a team member
  * @param {string} personalPage The URL of the personal page of the member
- * @returns {Promise<*>} The fetched data
+ * @returns {Promise<{
+ * firstName: string
+ * lastName: string
+ * avatar_url: string
+ * age: number
+ * bio: string
+ * stats: {title: string; value: number}[]
+ * strengths: string[]
+ * weaknesses: string[]
+ * habitat: {title: string; value: number}[]
+ * favoritePokemon: string
+ * favoritePokemonAvatar: string
+ * favoritePokemonColor: string
+ * }>} The fetched data
  */
 export const fetchPersonData = async (personalPage) => {
   try {
@@ -32,6 +45,27 @@ export const fetchPersonData = async (personalPage) => {
   }
 };
 
+/**
+ * Fetches personal data from each team member
+ * @param {{
+ * teamName: string
+ * members: {name: string; personalPage: string}[]
+ * }} team The team object
+ * @returns {Promise<{
+ * firstName: string
+ * lastName: string
+ * avatar_url: string
+ * age: number
+ * bio: string
+ * stats: {title: string; value: number}[]
+ * strengths: string[]
+ * weaknesses: string[]
+ * habitat: {title: string; value: number}[]
+ * favoritePokemon: string
+ * favoritePokemonAvatar: string
+ * favoritePokemonColor: string
+ * }[]>} The team members data
+ */
 export const fetchTeamMembers = async (team) => {
   const promises = [];
   team.members.forEach((member) => {
@@ -43,7 +77,6 @@ export const fetchTeamMembers = async (team) => {
   result.forEach((memberResult) => {
     if (memberResult.status === "fulfilled") {
       members.push(memberResult.value);
-      console.log("member", memberResult.value);
     }
   });
   return members;

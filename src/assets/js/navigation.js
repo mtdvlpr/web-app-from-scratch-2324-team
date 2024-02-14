@@ -7,7 +7,20 @@ const DETAIL_ARTICLES = ["about", "stats", "habitats"];
 
 /**
  * Fills the main navigation with members
- * @param {*[]} members The members to load
+ * @param {{
+ * firstName: string
+ * lastName: string
+ * avatar_url: string
+ * age: number
+ * bio: string
+ * stats: {title: string; value: number}[]
+ * strengths: string[]
+ * weaknesses: string[]
+ * habitat: {title: string; value: number}[]
+ * favoritePokemon: string
+ * favoritePokemonAvatar: string
+ * favoritePokemonColor: string
+ * }[]} members The members to load
  */
 export const initNavigation = (members) => {
   const list = document.createElement("ul");
@@ -38,7 +51,7 @@ export const initNavigation = (members) => {
 
 /**
  * Sets the active page
- * @param {string} page The page to display
+ * @param {string | undefined} page The page to display
  */
 export const setActivePage = (page) => {
   setURL({ page });
@@ -82,6 +95,14 @@ export const initTabs = () => {
  */
 export const setActiveTab = (tab) => {
   setURL({ tab });
+
+  // Set active state for tab links
+  const tabs = document.querySelectorAll("#nav-sub a");
+  tabs.forEach((tabEl) => {
+    tabEl.classList.toggle("active", tabEl.textContent.toLowerCase() === tab);
+  });
+
+  // Show active article
   DETAIL_ARTICLES.forEach((article) => {
     const element = document.getElementById(article);
     element.classList.toggle("active", article === tab);
@@ -92,9 +113,20 @@ export const setActiveTab = (tab) => {
  * Sets the current URL
  * @param {{page?: string; tab?: string; home?: boolean}} param0 The page and tab to set
  */
-export const setURL = ({ page, tab, home } = { home: true }) => {
+export const setURL = ({ page, tab } = {}) => {
   const url = new URL(window.location);
   const [currentPage, currentTab] = url.hash.substring(2).split("/");
-  url.hash = home ? "" : `#/${page ?? currentPage}/${tab ?? currentTab}`;
+  url.hash = page || tab ? `#/${page ?? currentPage}/${tab ?? currentTab}` : "";
   window.history.pushState(null, "", url.toString());
+};
+
+/**
+ * Sets the navigation to loading state
+ */
+export const setNavigationLoading = () => {
+  const navItems = document.querySelectorAll("#nav-main a");
+  const pokeballTemplate = document.getElementById("pokeball-loader");
+  navItems.forEach((navItem) => {
+    navItem.innerHTML = pokeballTemplate.innerHTML;
+  });
 };
