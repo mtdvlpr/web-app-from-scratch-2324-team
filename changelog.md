@@ -2,4 +2,12 @@
 
 ## 12-02-2024
 
-- Eerste opzet voor de applicatie (hello world)
+- First setup of the application (hello world)
+
+## 13-02-2024
+
+- Added the base HTML structure and some styling with CSS
+
+## 14-02-2024
+
+- Added the JavaScript logic for fetching data and navigation
