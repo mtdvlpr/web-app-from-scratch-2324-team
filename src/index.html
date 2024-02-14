@@ -1,141 +1,132 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Meta tags -->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Links -->
-        <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
-        <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- Links -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
 
-        <!-- Scripts -->
-        <script type="importmap">
-            {
-                "imports": {
-                    "api": "/web-app-from-scratch-2324-team/assets/js/api.js",
-                    "member": "/web-app-from-scratch-2324-team/assets/js/member.js",
-                    "navigation": "/web-app-from-scratch-2324-team/assets/js/navigation.js"
-                }
-            }
-        </script>
-        <script type="module" src="main.js"></script>
+    <!-- Scripts -->
+    <script type="importmap">
+      {
+        "imports": {
+          "api": "/web-app-from-scratch-2324-team/assets/js/api.js",
+          "member": "/web-app-from-scratch-2324-team/assets/js/member.js",
+          "navigation": "/web-app-from-scratch-2324-team/assets/js/navigation.js"
+        }
+      }
+    </script>
+    <script type="module" src="main.js"></script>
 
-        <!-- Title and base URL -->
-        <title>Team Rocket - WAFS</title>
-        <base href="/web-app-from-scratch-2324-team/" />
-    </head>
+    <!-- Title and base URL -->
+    <title>Team Rocket - WAFS</title>
+    <base href="/web-app-from-scratch-2324-team/" />
+  </head>
 
-    <body>
-        <div id="app">
-            <!-- Header -->
-            <header>
-                <div></div>
-                <h1 id="title">
-                    <a href="">
-                        <img src="assets/img/pokemon.svg" alt="Pokémon logo" />
-                    </a>
-                </h1>
-                <div></div>
-            </header>
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <header>
+        <div></div>
+        <h1 id="title">
+          <a href="">
+            <img src="assets/img/pokemon.svg" alt="Pokémon logo" />
+          </a>
+        </h1>
+        <div></div>
+      </header>
 
-            <!-- Main content -->
-            <main>
-                <!-- Main navigation -->
-                <nav id="nav-main">
-                    <ul>
-                        <li>
-                            <a href="#"><img alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" /></a>
-                        </li>
-                    </ul>
-                </nav>
+      <!-- Main content -->
+      <main>
+        <!-- Main navigation -->
+        <nav id="nav-main">
+          <ul>
+            <li>
+              <a href="#"><img alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img alt="" /></a>
+            </li>
+          </ul>
+        </nav>
 
-                <div>
-                    <!-- Team article -->
-                    <article id="team" class="active">
-                        <h2>Team Rocket</h2>
-                        <p>Welcome to our team page!</p>
-                        <img src="./assets/img/Team_rocket4.webp" alt="" />
-                    </article>
+        <div>
+          <!-- Team article -->
+          <article id="team" class="active">
+            <h2>Team Rocket</h2>
+            <p>Welcome to our team page!</p>
+            <img src="./assets/img/Team_rocket4.webp" alt="" />
+          </article>
 
-                    <nav id="nav-sub">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    About
-                                    <img
-                                        src="./assets/img/pokeball_closed.png"
-                                        alt=""
-                                    />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Stats
-                                    <img
-                                        src="./assets/img/pokeball_closed.png"
-                                        alt=""
-                                    />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Habitats
-                                    <img
-                                        src="./assets/img/pokeball_closed.png"
-                                        alt=""
-                                    />
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+          <nav id="nav-sub">
+            <ul>
+              <li>
+                <a href="#">
+                  About
+                  <img src="./assets/img/pokeball_closed.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Stats
+                  <img src="./assets/img/pokeball_closed.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Habitats
+                  <img src="./assets/img/pokeball_closed.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-                    <!-- About article -->
-                    <article id="about">
-                        <h2>About</h2>
-                        <img src="" alt="avatar" />
-                        <p>Loading...</p>
-                    </article>
+          <div class="pokemon-avatar">
+            <img src="./assets/img/avatar_placeholder.png" alt="" />
+          </div>
 
-                    <!-- Stats article -->
-                    <article id="stats">
-                        <h2>Stats</h2>
-                        <img
-                            src="./assets/img/avatar_placeholder.png"
-                            alt="avatar"
-                            class="avatar"
-                        />
-                    </article>
+          <!-- About article -->
+          <article id="about">
+            <h2>About</h2>
+            <img src="" alt="avatar" />
+            <p>Loading...</p>
+          </article>
 
-                    <!-- Habitats article -->
-                    <article id="habitats">
-                        <h2>Habitats</h2>
-                    </article>
-                </div>
-            </main>
-
-            <!-- Footer -->
-            <footer>
-                <div></div>
-            </footer>
-        </div>
-
-        <!-- Pokeball loader -->
-        <template id="pokeball-loader">
+          <!-- Stats article -->
+          <article id="stats">
+            <h2>Stats</h2>
             <img
-                src="assets/img/pokeball.png"
-                alt="Loading..."
-                class="loader"
+              src="./assets/img/avatar_placeholder.png"
+              alt="avatar"
+              class="avatar"
             />
-        </template>
-    </body>
+          </article>
+
+          <!-- Habitats article -->
+          <article id="habitats">
+            <h2>Habitats</h2>
+          </article>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div></div>
+      </footer>
+    </div>
+
+    <!-- Pokeball loader -->
+    <template id="pokeball-loader">
+      <img src="assets/img/pokeball.png" alt="Loading..." class="loader" />
+    </template>
+  </body>
 </html>

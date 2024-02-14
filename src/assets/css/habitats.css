@@ -1,11 +1,31 @@
-#habitats a {
-    padding: 1rem 3rem;
-    border-radius: 0.2rem;
-    background-color: red;
+#habitats li:has(a) {
+  padding: 1rem 3rem;
+  border-radius: 0.2rem;
+  background-color: var(--primary-color);
+  transition: var(--transition-base);
+  cursor: pointer;
+  text-align: center;
 }
 
-#habitats {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+#habitats li:has(a):hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 0 var(--secondary-color);
+}
+
+#habitats ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 800px) {
+  #habitats ul {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #habitats ul {
+    width: 100%;
+  }
 }
