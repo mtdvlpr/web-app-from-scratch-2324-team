@@ -30,13 +30,13 @@
     <div id="app">
       <!-- Header -->
       <header>
-        <div></div>
+        <hr />
         <h1 id="title">
           <a href="">
             <img src="assets/img/pokemon.svg" alt="Pokémon logo" />
           </a>
         </h1>
-        <div></div>
+        <hr />
       </header>
 
       <!-- Main content -->
@@ -117,16 +117,17 @@
           <img src="assets/img/avatar_placeholder.png" alt="" />
         </div>
       </main>
-
-      <!-- Footer -->
-      <footer>
-        <div></div>
-      </footer>
     </div>
 
     <!-- Pokeball loader -->
     <template id="pokeball-loader">
-      <img src="assets/img/pokeball.png" alt="Loading..." class="loader" />
+      <img
+        src="assets/img/pokeball.png"
+        alt="Loading..."
+        class="loader"
+        aria-live="polite"
+        aria-busy="true"
+      />
     </template>
   </body>
 </html>
