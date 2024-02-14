@@ -1,4 +1,53 @@
-/* Team styles */
+/* TEAM STYLES */
+
+#habitats,
+#about,
+#stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem 0 2rem 0;
+}
+
+@media (min-width: 800px) {
+  #habitats,
+  #about,
+  #stats {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* POKEBALL NAVIGATION */
+
+#nav-sub ul {
+  display: flex;
+  gap: 1rem;
+}
+
+#nav-sub ul li a {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#nav-sub ul li a:hover img {
+  transform: translateY(-0.2rem);
+  filter: drop-shadow(0 0.5rem 0rem var(--secondary-color));
+}
+
+#nav-sub img {
+  width: 4rem;
+  transition: var(--transition-base);
+}
+
+/* AVATAR */
+.avatar {
+  width: 100%;
+  align-self: center;
+}
 
 #team {
   display: none;
@@ -6,4 +55,27 @@
 
 #team.active {
   display: block;
+}
+
+#team img {
+  width: 80%;
+  margin-left: 10%;
+  padding: 3rem 0 3rem 0;
+  animation: img-drop-shadow-animation 1s ease-in-out forwards;
+}
+
+@keyframes img-drop-shadow-animation {
+  0% {
+    filter: drop-shadow(-30rem -30rem 0 var(--secondary-color))
+      drop-shadow(30rem 30rem 0 var(--tertiary-color));
+  }
+
+  90% {
+    filter: drop-shadow(0.35rem 0.35rem 0 var(--secondary-color))
+      drop-shadow(-0.35rem -0.35rem 0 var(--tertiary-color));
+  }
+  100% {
+    filter: drop-shadow(0.25rem 0.25rem 0 var(--secondary-color))
+      drop-shadow(-0.25rem -0.25rem 0 var(--tertiary-color));
+  }
 }

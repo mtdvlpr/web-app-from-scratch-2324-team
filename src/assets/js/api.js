@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 
 /**
  * Fetches local team data from ./team.json
@@ -9,10 +9,10 @@
  */
 export async function fetchTeamData() {
   try {
-    const response = await fetch("./team.json");
-    return await response.json();
+    const response = await fetch('./team.json')
+    return await response.json()
   } catch (e) {
-    console.error(e);
+    console.error(e)
   }
 }
 
@@ -37,13 +37,13 @@ export async function fetchTeamData() {
 export const fetchPersonData = async (personalPage) => {
   try {
     const response = await fetch(
-      `${personalPage}${personalPage.endsWith("/") ? "" : "/"}info.json`
-    );
-    return response.json();
+      `${personalPage}${personalPage.endsWith('/') ? '' : '/'}info.json`
+    )
+    return response.json()
   } catch (e) {
-    console.error(e);
+    console.error(e)
   }
-};
+}
 
 /**
  * Fetches personal data from each team member
@@ -67,17 +67,17 @@ export const fetchPersonData = async (personalPage) => {
  * }[]>} The team members data
  */
 export const fetchTeamMembers = async (team) => {
-  const promises = [];
+  const promises = []
   team.members.forEach((member) => {
-    promises.push(fetchPersonData(member.personalPage));
-  });
+    promises.push(fetchPersonData(member.personalPage))
+  })
 
-  const members = [];
-  const result = await Promise.allSettled(promises);
+  const members = []
+  const result = await Promise.allSettled(promises)
   result.forEach((memberResult) => {
-    if (memberResult.status === "fulfilled") {
-      members.push(memberResult.value);
+    if (memberResult.status === 'fulfilled') {
+      members.push(memberResult.value)
     }
-  });
-  return members;
-};
+  })
+  return members
+}
