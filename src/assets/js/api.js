@@ -23,7 +23,9 @@ export async function fetchTeamData() {
  */
 export const fetchPersonData = async (personalPage) => {
   try {
-    const response = await fetch(`${personalPage}/info.json`);
+    const response = await fetch(
+      `${personalPage}${personalPage.endsWith("/") ? "" : "/"}info.json`
+    );
     return response.json();
   } catch (e) {
     console.error(e);
@@ -41,6 +43,7 @@ export const fetchTeamMembers = async (team) => {
   result.forEach((memberResult) => {
     if (memberResult.status === "fulfilled") {
       members.push(memberResult.value);
+      console.log("member", memberResult.value);
     }
   });
   return members;

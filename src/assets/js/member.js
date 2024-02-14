@@ -65,5 +65,5 @@ export const setActiveMember = (member) => {
 
   // Set member stats and habitats
   setStats(member?.stats);
-  setHabitats(member?.habitats);
+  setHabitats(member?.habitat);
 };
