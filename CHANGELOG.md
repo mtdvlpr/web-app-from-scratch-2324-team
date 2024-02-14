@@ -19,13 +19,11 @@ uiteindelijk hadden we voor pokemon gekozen.
 
 Hier hebben we het meeste tijd besteed aan onze persoonlijke apps. We hebben ook alvast een taken lijst aangemaakt en inspiratie opgezocht hoe we de app willen designen.
 
-Nesli - Design & processverslag
-Eva & Yeliz - Coding
-Manoah - Fetching data & JS
 
-# 10/11-02-2024
+## 12-02-2024
 
-We zijn begonnen met het design maken op figma
+- First setup of the application (hello world)
+- Created a [design in Figma](https://www.figma.com/file/J0LWpqkhzN6299S9d0ONdG/WAFS-team-design?type=design&node-id=0%3A1&mode=design&t=AeRfs7XoigEnfK3Y-1)
 
 ![ Main Page](/screenshots/figma_img1.png)
 
@@ -35,22 +33,17 @@ We zijn begonnen met het design maken op figma
 
 ![ Links Page](/screenshots/figma_img4.png)
 
-een breakdown van onze design
+- Design breakdown
 
 ![ Breakdown](/screenshots/breakdown.png)
 
-comments & feedback
+- Comments & feedback
 
 ![ Alt Text](/screenshots/figma_feedback1.png)
 
 ![ Toepassingen](/screenshots/figma_5.png)
 
 Dit is onze uiteindelijke home pagina geworden nadat we onze feedback hebben toegewerkt.
-
-## 12-02-2024
-
-- First setup of the application (hello world)
-- Created a [design in Figma](https://www.figma.com/file/J0LWpqkhzN6299S9d0ONdG/WAFS-team-design?type=design&node-id=0%3A1&mode=design&t=AeRfs7XoigEnfK3Y-1)
 
 ## 13-02-2024
 
