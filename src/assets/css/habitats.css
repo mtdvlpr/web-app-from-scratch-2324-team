@@ -2,10 +2,15 @@
   padding: 1rem 3rem;
   border-radius: 0.2rem;
   background-color: var(--primary-color);
-  transition: var(--transition-base);
   cursor: pointer;
   text-align: center;
   display: block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #habitats a {
+    transition: var(--transition-base);
+  }
 }
 
 #habitats a:hover {

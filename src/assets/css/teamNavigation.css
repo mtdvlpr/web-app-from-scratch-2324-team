@@ -14,7 +14,12 @@
   display: inline-block;
   background-color: white;
   padding: 2rem 3rem;
-  transition: var(--transition-base);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #nav-main li a {
+    transition: var(--transition-base);
+  }
 }
 
 #nav-main li a:hover:not(a.active) {
@@ -41,7 +46,12 @@
 
 #nav-main img.loader {
   opacity: 0.2;
-  animation: rotate 1s infinite;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #nav-main img.loader {
+    animation: rotate 1s infinite;
+  }
 }
 
 @media (min-width: 800px) {

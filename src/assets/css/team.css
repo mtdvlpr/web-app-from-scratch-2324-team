@@ -40,7 +40,12 @@
 
 #nav-sub img {
   width: 4rem;
-  transition: var(--transition-base);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #nav-sub img {
+    transition: var(--transition-base);
+  }
 }
 
 /* AVATAR */
@@ -61,7 +66,12 @@
   width: 80%;
   margin-left: 10%;
   padding: 3rem 0 3rem 0;
-  animation: img-drop-shadow-animation 1s ease-in-out forwards;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #team img {
+    animation: img-drop-shadow-animation 1s ease-in-out forwards;
+  }
 }
 
 @keyframes img-drop-shadow-animation {
