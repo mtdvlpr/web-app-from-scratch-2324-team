@@ -14,6 +14,7 @@
       {
         "imports": {
           "api": "/web-app-from-scratch-2324-team/assets/js/api.js",
+          "team": "/web-app-from-scratch-2324-team/assets/js/team.js",
           "member": "/web-app-from-scratch-2324-team/assets/js/member.js",
           "navigation": "/web-app-from-scratch-2324-team/assets/js/navigation.js"
         }
@@ -63,7 +64,14 @@
           <!-- Team article -->
           <article id="team" class="active">
             <h2>Team Rocket</h2>
-            <p>Welcome to our team page!</p>
+            <p>
+              Welcome to our team page!
+              <noscript>
+                Please enable JavaScript, to make navigation and data fetching
+                work.
+              </noscript>
+            </p>
+            <div id="team-error"></div>
             <img src="assets/img/Team_rocket4.webp" alt="" />
           </article>
 
@@ -122,7 +130,7 @@
     <!-- Pokeball loader -->
     <template id="pokeball-loader">
       <img
-        src="assets/img/pokeball.png"
+        src="assets/img/pokeball_closed.png"
         alt="Loading..."
         class="loader"
         aria-live="polite"

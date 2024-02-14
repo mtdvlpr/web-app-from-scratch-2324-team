@@ -2,23 +2,29 @@
 
 // Main entry point of the app
 import { fetchTeamData, fetchTeamMembers } from 'api'
+import { setTeamError } from 'team'
 import { setActiveMember } from 'member'
 import {
   initTabs,
   initNavigation,
   setActiveTab,
   setNavigationLoading,
+  setNavigationError,
 } from 'navigation'
 
 // Loads data in the app
 async function loadData() {
   setNavigationLoading()
+  document.getElementById('team-error').innerHTML = ''
   const team = await fetchTeamData()
+  if (!team) setTeamError(loadData)
   const members = await fetchTeamMembers(team)
-  initNavigation(members)
+  console.log('members', members)
+  if (members?.length) initNavigation(members)
+  else setNavigationError()
 
   const url = new URL(window.location)
-  const member = members.find((member) =>
+  const member = members?.find((member) =>
     url.hash.startsWith(`#/${member.firstName}`)
   )
   if (member) {

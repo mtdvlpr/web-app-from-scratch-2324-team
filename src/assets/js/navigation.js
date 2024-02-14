@@ -74,6 +74,8 @@ export const setActivePage = (page) => {
   teamContainer.classList.toggle('active', !page)
   const subNav = document.getElementById('nav-sub')
   subNav.classList.toggle('active', !!page)
+  const pokemonAvatar = document.querySelector('.pokemon-avatar')
+  pokemonAvatar.classList.toggle('active', !!page)
   if (!page) setActiveTab('')
 }
 
@@ -132,5 +134,15 @@ export const setNavigationLoading = () => {
   const pokeballTemplate = document.getElementById('pokeball-loader')
   navItems.forEach((navItem) => {
     navItem.innerHTML = pokeballTemplate.innerHTML
+  })
+}
+
+/**
+ * Sets the navigation to error state
+ */
+export const setNavigationError = () => {
+  const navItems = document.querySelectorAll('#nav-main a')
+  navItems.forEach((navItem) => {
+    navItem.innerHTML = '<img alt="Could not load member" />'
   })
 }

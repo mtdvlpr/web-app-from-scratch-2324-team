@@ -22,6 +22,11 @@ const setStats = (stats = []) => {
       .appendChild(document.createElement('div'))
       .append(label, meter)
   })
+  if (!stats.length) {
+    const emptyMessage = document.createElement('p')
+    emptyMessage.textContent = 'No stats available.'
+    statsContainer.appendChild(emptyMessage)
+  }
 }
 
 /**
@@ -44,7 +49,13 @@ const setHabitats = (habitats = []) => {
     }
     list.appendChild(habitatItem)
   })
-  habitatArticle.appendChild(list)
+  if (habitats.length) {
+    habitatArticle.appendChild(list)
+  } else {
+    const emptyMessage = document.createElement('p')
+    emptyMessage.textContent = 'No habitats available.'
+    habitatArticle.appendChild(emptyMessage)
+  }
 }
 
 /**
@@ -81,7 +92,7 @@ export const setActiveMember = (member) => {
 
   // Set member bio
   const bio = document.querySelector('#about p')
-  bio.innerHTML = member?.bio
+  bio.innerHTML = member?.bio ?? 'No bio available.'
 
   // Set member stats and habitats
   setStats(member?.stats)

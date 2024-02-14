@@ -57,6 +57,10 @@
   display: block;
 }
 
+.pokemon-avatar img {
+  max-width: 500px;
+}
+
 #team img {
   width: 80%;
   margin-left: 10%;

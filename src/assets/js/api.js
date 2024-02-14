@@ -67,17 +67,19 @@ export const fetchPersonData = async (personalPage) => {
  * }[]>} The team members data
  */
 export const fetchTeamMembers = async (team) => {
-  const promises = []
-  team.members.forEach((member) => {
-    promises.push(fetchPersonData(member.personalPage))
+  const members = []
+  team?.members?.forEach((member) => {
+    members.push({
+      name: member.name,
+      promise: fetchPersonData(member.personalPage),
+    })
   })
 
-  const members = []
-  const result = await Promise.allSettled(promises)
-  result.forEach((memberResult) => {
-    if (memberResult.status === 'fulfilled') {
-      members.push(memberResult.value)
+  const result = await Promise.allSettled(members.map((p) => p.promise))
+  return result.map((promise, index) => {
+    if (promise.status === 'fulfilled' && promise.value) {
+      return promise.value
     }
+    return { firstName: team.members[index].name }
   })
-  return members
 }
