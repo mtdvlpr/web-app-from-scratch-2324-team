@@ -4,8 +4,7 @@
   object-fit: cover;
   margin: 2rem 0 2rem 0;
   border: 0.1rem solid var(--tertiary-color);
-  box-shadow:
-    -0.5rem 0.5rem 0 var(--tertiary-color),
+  box-shadow: -0.5rem 0.5rem 0 var(--tertiary-color),
     0.5rem -0.5rem var(--secondary-color);
 }
 @media (min-width: 800px) {

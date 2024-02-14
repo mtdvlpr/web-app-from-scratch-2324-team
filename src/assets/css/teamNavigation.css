@@ -18,16 +18,14 @@
 }
 
 #nav-main li a:hover:not(a.active) {
-  box-shadow:
-    -0.5rem 0.5rem 0 var(--tertiary-color),
+  box-shadow: -0.5rem 0.5rem 0 var(--tertiary-color),
     0.5rem -0.5rem var(--secondary-color);
 }
 
 #nav-main li a.active {
   background-color: var(--secondary-color);
   transform: scale(1.15);
-  box-shadow:
-    -0.25rem 0.25rem 0 var(--tertiary-color),
+  box-shadow: -0.25rem 0.25rem 0 var(--tertiary-color),
     0.25rem -0.25rem var(--tertiary-color);
 }
 

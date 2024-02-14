@@ -142,24 +142,21 @@ h2 {
   0% {
     color: var(--primary-color);
 
-    text-shadow:
-      -15rem -15rem var(--secondary-color),
+    text-shadow: -15rem -15rem var(--secondary-color),
       15rem 15rem var(--tertiary-color);
   }
 
   95% {
     color: var(--primary-color);
 
-    text-shadow:
-      0.35rem 0.35rem var(--secondary-color),
+    text-shadow: 0.35rem 0.35rem var(--secondary-color),
       -0.35rem -0.35rem var(--tertiary-color);
   }
 
   100% {
     color: var(--primary-color);
 
-    text-shadow:
-      0.25rem 0.25rem var(--secondary-color),
+    text-shadow: 0.25rem 0.25rem var(--secondary-color),
       -0.25rem -0.25rem var(--tertiary-color);
   }
 }
