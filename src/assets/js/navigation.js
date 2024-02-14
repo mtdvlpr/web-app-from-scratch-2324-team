@@ -59,10 +59,8 @@ export const setActivePage = (page) => {
   // Set active state for navigation items
   const navItems = document.querySelectorAll('#nav-main a')
   navItems.forEach((navItem) => {
-    navItem.classList.toggle(
-      'active',
-      navItem.getAttribute('href').startsWith(`#/${page}`)
-    )
+    const active = navItem.getAttribute('href').startsWith(`#/${page}`)
+    navItem.classList.toggle('active', active)
   })
 
   // Update tab links
@@ -99,10 +97,13 @@ export const setActiveTab = (tab) => {
   // Set active state for tab links
   const tabs = document.querySelectorAll('#nav-sub a')
   tabs.forEach((tabEl) => {
-    tabEl.classList.toggle(
-      'active',
-      tabEl.textContent.toLowerCase().trim() === tab
+    const active = tabEl.textContent.toLowerCase().trim() === tab
+    const img = tabEl.querySelector('img')
+    img.src = img.src.replace(
+      active ? 'closed' : 'open',
+      active ? 'open' : 'closed'
     )
+    tabEl.classList.toggle('active', active)
   })
 
   // Show active article
