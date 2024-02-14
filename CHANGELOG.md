@@ -41,9 +41,9 @@ Hier hebben we het meeste tijd besteed aan onze persoonlijke apps. We hebben ook
 
 ![ Alt Text](/screenshots/figma_feedback1.png)
 
-![ Toepassingen](/screenshots/figma_5.png)
+- Paar toepassingen uitgewerkt
 
-Dit is onze uiteindelijke home pagina geworden nadat we onze feedback hebben toegewerkt.
+![ Toepassingen](/screenshots/figma_5.png)
 
 ## 13-02-2024
 
