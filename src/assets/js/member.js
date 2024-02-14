@@ -74,6 +74,11 @@ export const setActiveMember = (member) => {
   avatar.src = member?.avatar_url
   avatar.alt = member?.firstName
 
+  // Set favorite pokemon avatar
+  const favoritePokemon = document.querySelector('.pokemon-avatar img')
+  favoritePokemon.src =
+    member?.favoritePokemonAvatar ?? 'assets/img/avatar_placeholder.png'
+
   // Set member bio
   const bio = document.querySelector('#about p')
   bio.innerHTML = member?.bio
