@@ -68,7 +68,7 @@ export const setActivePage = (page) => {
   // Update tab links
   const tabs = document.querySelectorAll("#nav-sub a");
   tabs.forEach((tab) => {
-    tab.href = `#/${page}/${tab.textContent.toLowerCase()}`;
+    tab.href = `#/${page}/${tab.textContent.toLowerCase().trim()}`;
   });
 
   // Show/hide team article and tabs
@@ -85,7 +85,7 @@ export const setActivePage = (page) => {
 export const initTabs = () => {
   const tabs = document.querySelectorAll("#nav-sub a");
   tabs.forEach((tab) => {
-    tab.onclick = () => setActiveTab(tab.textContent.toLowerCase());
+    tab.onclick = () => setActiveTab(tab.textContent.toLowerCase().trim());
   });
 };
 
@@ -99,7 +99,10 @@ export const setActiveTab = (tab) => {
   // Set active state for tab links
   const tabs = document.querySelectorAll("#nav-sub a");
   tabs.forEach((tabEl) => {
-    tabEl.classList.toggle("active", tabEl.textContent.toLowerCase() === tab);
+    tabEl.classList.toggle(
+      "active",
+      tabEl.textContent.toLowerCase().trim() === tab
+    );
   });
 
   // Show active article
