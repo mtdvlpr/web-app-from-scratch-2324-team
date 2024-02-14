@@ -1,13 +1,14 @@
-#habitats li:has(a) {
+#habitats a {
   padding: 1rem 3rem;
   border-radius: 0.2rem;
   background-color: var(--primary-color);
   transition: var(--transition-base);
   cursor: pointer;
   text-align: center;
+  display: block;
 }
 
-#habitats li:has(a):hover {
+#habitats a:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0 0.5rem 0 var(--secondary-color);
 }
