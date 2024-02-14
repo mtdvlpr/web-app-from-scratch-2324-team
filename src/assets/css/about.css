@@ -1,18 +1,19 @@
 #about img {
-    width: 50vw;
-    border: 0.1rem dashed black;
-    aspect-ratio: 1;
-    object-fit: cover;
-    margin: 2rem 0 2rem 0;
-}
-@media (min-width: 800px) {
-    #about img {
-        width: 25vw;
-        border: 0.1rem solid black;
-    }
+  width: 50vw;
+  border: 0.1rem dashed black;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: 2rem 0 2rem 0;
 }
 
 #about p {
-    background-color: white;
-    padding: 1rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  #about img {
+    width: 25vw;
+    border: 0.1rem solid black;
+  }
 }
