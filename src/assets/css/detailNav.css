@@ -1,7 +1,8 @@
 #nav-sub,
 #about,
 #stats,
-#habitats {
+#habitats,
+.pokemon-avatar {
   display: none;
 }
 
@@ -10,4 +11,10 @@
 #stats.active,
 #habitats.active {
   display: block;
+}
+
+@media (min-width: 1400px) {
+  .pokemon-avatar.active {
+    display: block;
+  }
 }
