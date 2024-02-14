@@ -3,7 +3,29 @@
 /* Import feature styles */
 @import url('./team.css');
 @import url('./header.css');
+@import url('./about.css');
+@import url('./detailNav.css');
 @import url('./teamNavigation.css');
+
+:root {
+    font-family: monospace;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
+
+    color-scheme: light dark;
+    color: black;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --primary-color: #fbd743;
+    --secondary-color: #4261b4;
+    --tertiary-color: #153066;
+    --transition-base: 0.5s ease-out;
+}
 
 :root {
     font-family: monospace;
@@ -70,6 +92,7 @@ main {
 @media (min-width: 1400px) {
     main {
         flex-direction: row;
+        gap: 4rem;
     }
 }
 
@@ -97,4 +120,26 @@ main > *:nth-child(1) {
 a {
     text-decoration: none;
     color: black;
+}
+
+main > img {
+    margin-left: calc(50% - 25vw);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 50vw;
+}
+
+@media (min-width: 800px) {
+    main > img {
+        margin-left: calc(50% - 12.5vw);
+        width: 25vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    main > img {
+        margin: 0;
+        width: 15vw;
+        object-fit: contain;
+    }
 }

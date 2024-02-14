@@ -1,4 +1,4 @@
-.main-nav ul {
+#nav-main ul {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -7,7 +7,7 @@
 }
 
 @media (min-width: 1400px) {
-    .main-nav ul {
+    #nav-main ul {
         flex-wrap: nowrap;
         flex-direction: column;
         gap: 1rem;
@@ -15,24 +15,24 @@
     }
 }
 
-.main-nav li.active a {
+#nav-main li a.active {
     background-color: var(--secondary-color);
     transform: scale(1.15);
 }
 
-.main-nav li a {
+#nav-main li a {
     display: inline-block;
     background-color: white;
     padding: 2rem 3rem;
 }
 
 @media (min-width: 800px) {
-    .main-nav li a {
+    #nav-main li a {
         padding: 2rem 2rem;
     }
 }
 
-.main-nav img {
+#nav-main img {
     width: 4rem;
     opacity: 0.2;
     animation: rotate 1s infinite;
@@ -46,4 +46,23 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+#nav-main li {
+    margin-bottom: 2rem;
+}
+
+#nav-main li a {
+    display: inline-block;
+    background-color: white;
+    padding: 2rem 3rem;
+}
+
+#nav-main img {
+    width: 4rem;
+}
+
+#nav-main img.loader {
+    opacity: 0.2;
+    animation: rotate 1s infinite;
 }

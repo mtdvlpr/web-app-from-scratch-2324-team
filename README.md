@@ -1,6 +1,13 @@
 # web-app-from-scratch-2324-team
 
-## Description
+## Table of Contents
+
+- [web-app-from-scratch-2324-team](#web-app-from-scratch-2324-team)
+  - [Table of Contents](#table-of-contents)
+  - [Assignment](#assignment)
+  - [Contribute](#contribute)
+
+## Assignment
 
 This is an assignment for Web App From Scratch. The assignment is to create a group application that fetches data from our individual applications. We all provided our data in a `info.json` file at the root of our applications. The project is built with vanilla HTML, CSS and JavaScript.
 
