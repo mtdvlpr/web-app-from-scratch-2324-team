@@ -1,0 +1,11 @@
+#habitats a {
+    padding: 1rem 3rem;
+    border-radius: 0.2rem;
+    background-color: red;
+}
+
+#habitats {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
