@@ -29,6 +29,9 @@ export async function fetchTeamData() {
  * strengths: string[]
  * weaknesses: string[]
  * habitat: {title: string; value: number}[]
+ * favoritePokemon: string
+ * favoritePokemonAvatar: string
+ * favoritePokemonColor: string
  * }>} The fetched data
  */
 export const fetchPersonData = async (personalPage) => {
@@ -58,6 +61,9 @@ export const fetchPersonData = async (personalPage) => {
  * strengths: string[]
  * weaknesses: string[]
  * habitat: {title: string; value: number}[]
+ * favoritePokemon: string
+ * favoritePokemonAvatar: string
+ * favoritePokemonColor: string
  * }[]>} The team members data
  */
 export const fetchTeamMembers = async (team) => {

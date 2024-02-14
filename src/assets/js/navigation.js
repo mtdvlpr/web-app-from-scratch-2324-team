@@ -17,6 +17,9 @@ const DETAIL_ARTICLES = ["about", "stats", "habitats"];
  * strengths: string[]
  * weaknesses: string[]
  * habitat: {title: string; value: number}[]
+ * favoritePokemon: string
+ * favoritePokemonAvatar: string
+ * favoritePokemonColor: string
  * }[]} members The members to load
  */
 export const initNavigation = (members) => {

@@ -59,9 +59,14 @@ const setHabitats = (habitats = []) => {
  * strengths: string[]
  * weaknesses: string[]
  * habitat: {title: string; value: number}[]
+ * favoritePokemon: string
+ * favoritePokemonAvatar: string
+ * favoritePokemonColor: string
  * } | undefined} member The member to display
  */
 export const setActiveMember = (member) => {
+  document.body.style.backgroundColor =
+    member?.favoritePokemonColor ?? "#fbd743";
   setActivePage(member?.firstName);
 
   // Set member avatar
