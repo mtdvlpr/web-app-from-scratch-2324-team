@@ -14,7 +14,9 @@
       {
         "imports": {
           "api": "/web-app-from-scratch-2324-team/assets/js/api.js",
-          "team": "/web-app-from-scratch-2324-team/assets/js/team.js"
+          "team": "/web-app-from-scratch-2324-team/assets/js/team.js",
+          "member": "/web-app-from-scratch-2324-team/assets/js/member.js",
+          "navigation": "/web-app-from-scratch-2324-team/assets/js/navigation.js"
         }
       }
     </script>
@@ -30,112 +32,86 @@
       <!-- Header -->
       <header>
         <div></div>
-        <h1 id="title"><img src="assets/img/pokemon.svg" alt="" /></h1>
+        <h1 id="title">
+          <img src="assets/img/pokemon.svg" alt="Pokémon logo" />
+        </h1>
         <div></div>
       </header>
 
       <!-- Main content -->
       <main>
         <!-- Main navigation -->
-        <nav>
+        <nav id="nav-main">
           <ul>
             <li>
               <a href="#">
-                <img src="assets/img/pokeball.png" alt="pokeball" />
+                <img
+                  src="assets/img/pokeball.png"
+                  alt="Loading..."
+                  class="loader"
+                />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/pokeball.png" alt="pokeball" />
+                <img
+                  src="assets/img/pokeball.png"
+                  alt="Loading..."
+                  class="loader"
+                />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/pokeball.png" alt="pokeball" />
+                <img
+                  src="assets/img/pokeball.png"
+                  alt="Loading..."
+                  class="loader"
+                />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/pokeball.png" alt="pokeball" />
+                <img
+                  src="assets/img/pokeball.png"
+                  alt="Loading..."
+                  class="loader"
+                />
               </a>
             </li>
           </ul>
-          <a href="#">Previous</a>
-          <a href="#">Next</a>
         </nav>
 
         <!-- Team article -->
-        <article id="team">
+        <article id="team" class="active">
           <h2>Team Rocket</h2>
-          <p>Welkom op onze website! Hier kan je....</p>
+          <p>Welcome to our team page!</p>
         </article>
+
+        <!-- Sub navigation -->
+        <nav id="nav-sub">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Stats</a></li>
+            <li><a href="#">Habitats</a></li>
+          </ul>
+        </nav>
 
         <!-- About article -->
         <article id="about">
-          <h2>loading...</h2>
-          <nav>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Links</a></li>
-            </ul>
-          </nav>
+          <h2>About</h2>
           <img src="" alt="avatar" />
-          <p>About this member</p>
+          <p>Loading...</p>
         </article>
 
-        <!-- Skills article -->
-        <article id="skills">
-          <h2>loading...</h2>
-          <nav>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Links</a></li>
-            </ul>
-          </nav>
-          <label for="html">HTML</label>
-          <meter id="html" value="5" min="0" max="10"></meter>
-          <label for="css">CSS</label>
-          <meter id="css" value="5" min="0" max="10"></meter>
-          <label for="js">JS</label>
-          <meter id="js" value="5" min="0" max="10"></meter>
-          <label for="design">DESIGN</label>
-          <meter id="design" value="5" min="0" max="10"></meter>
-
-          <p>Skills of this member</p>
+        <!-- Stats article -->
+        <article id="stats">
+          <h2>Stats</h2>
         </article>
 
-        <!-- Sub links -->
-        <article id="links">
-          <h2>loading...</h2>
-          <nav>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Links</a></li>
-            </ul>
-          </nav>
-          <ul>
-            <li>
-              <a href="#">
-                <img src="" alt="github" />
-                <p>Github</p></a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <img src="" alt="instagram" />
-                <p>Instagram</p></a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <img src="" alt="linkedIn" />
-                <p>LinkedIn</p></a
-              >
-            </li>
-          </ul>
+        <!-- Habitats article -->
+        <article id="habitats">
+          <h2>Habitats</h2>
         </article>
 
         <img src="assets/img/Team_rocket4.webp" alt="Team Rocket" />

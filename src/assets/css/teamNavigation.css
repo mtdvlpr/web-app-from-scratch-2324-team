@@ -1,25 +1,28 @@
-main > nav li {
-    margin-bottom: 2rem;
+#nav-main li {
+  margin-bottom: 2rem;
 }
 
-main > nav li a {
-    display: inline-block;
-    background-color: white;
-    padding: 2rem 3rem;
+#nav-main li a {
+  display: inline-block;
+  background-color: white;
+  padding: 2rem 3rem;
 }
 
-main > nav img {
-    width: 4rem;
-    opacity: 0.2;
-    animation: rotate 1s infinite;
+#nav-main img {
+  width: 4rem;
+}
+
+#nav-main img.loader {
+  opacity: 0.2;
+  animation: rotate 1s infinite;
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }

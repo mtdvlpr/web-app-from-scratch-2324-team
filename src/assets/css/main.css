@@ -3,6 +3,8 @@
 /* Import feature styles */
 @import url("./team.css");
 @import url("./header.css");
+@import url("./about.css");
+@import url("./detailNav.css");
 @import url("./teamNavigation.css");
 
 :root {
@@ -26,7 +28,7 @@ body {
   box-sizing: border-box;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #FBD743;
+  background-color: #fbd743;
 }
 
 #app {
@@ -44,7 +46,6 @@ body {
   }
 }
 
-
 ul {
   list-style: none;
 }
@@ -54,11 +55,11 @@ main {
   justify-content: space-between;
 }
 
-main>*:nth-child(1) {
+main > *:nth-child(1) {
   order: 3;
 }
 
-main> img {
+main > img {
   max-width: 25rem;
   align-self: center;
 }
